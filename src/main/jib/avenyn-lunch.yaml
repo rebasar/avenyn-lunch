@@ -1,0 +1,45 @@
+server:
+  applicationContextPath: ${CONTEXT_PATH:-/avenyn}
+lunchUrl: ${LUNCH_URL:-https://www.avenyn.se/dagens-lunch}
+slackUrl: ${SLACK_WEBHOOK_URL:-https://slack.com/hook}
+restaurants:
+  barrique:
+    name: 'Barrique'
+    url: 'https://www.barrique.nu/'
+  ristorante-bellora:
+    name: 'Bellora'
+    url: 'http://www.hotelbellora.se/ristorante-bellora-2/'
+  brasserie-lipp:
+    name: 'Brasserie Lipp'
+    url: 'http://brasserielipp.se/'
+  la-gondola-trattoria:
+    name: 'La Gondola'
+    url: 'http://gondola.se/'
+  hard-rock-cafe:
+    name: 'Hard Rock Cafe'
+    url: 'http://www.hardrock.com/cafes/gothenburg/'
+  mercado-mexico:
+    name: 'Mercado Mexico'
+    url: 'https://mercadomexico.se/'
+  olivia-avenyn:
+    name: 'Olivia'
+    url: 'https://oliviarestauranger.se/#!/restaurant/avenyn'
+  sjobaren:
+    name: 'Sjöbaren'
+    url: 'http://www.sjobaren.se/lorensberg/'
+  olstugan-tullen:
+    name: 'Tullen'
+    url: 'https://www.facebook.com/wardshusettullen/?fref=ts'
+messages:
+  default: 'I do not have any words left to describe the menu of %s'
+  daily:
+    - 'Are you excited for the lunch menu of the day? I surely am!'
+    - 'And here comes the lunch menu for the day! Enjoy!'
+    - 'If I was not a robot, I would be very excited about this lunch!'
+    - 'Are you ready for some lunch? Even if you said *no*, here are some options that might change your mind!'
+  restaurant:
+    - 'Ssshhhh... Do not tell anyone, but here is what is cooking at %s'
+    - 'Check out what %s has in the kitchen for you!'
+    - 'This message is brought to you by %s'
+    - 'The delicious menu of %s for today'
+    - 'OMG! Are you telling me that %s has these things in the menu today?'
