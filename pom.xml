@@ -33,7 +33,7 @@
                             <tag>${project.version}</tag>
                         </tags>
                         <auth>
-                            <username>${env.DOCKER_REPOSITORY_USERNAME}</username>
+                            <username>rebasar</username>
                             <password>${env.DOCKER_REPOSITORY_PASSWORD}</password>
                         </auth>
                     </to>
@@ -72,7 +72,7 @@
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>okhttp</artifactId>
-            <version>3.12.1</version>
+            <version>3.14.7</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
