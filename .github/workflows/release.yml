@@ -23,6 +23,7 @@ jobs:
       - name: Build Docker image with jib
         run: mvn -B jib:build --file pom.xml
         env:
-          DOCKER_IMAGE: docker.pkg.github.com/${GITHUB_REPOSITORY}/avenyn-lunch
+          DOCKER_IMAGE: ${{ secrets.RELEASE_USERNAME }}/avenyn-lunch
           AVENYN_LUNCH_PORT: 8080
-          DOCKER_REPOSITORY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+          DOCKER_REPOSITORY_USERNAME: ${{ secrets.RELEASE_USERNAME }}
+          DOCKER_REPOSITORY_PASSWORD: ${{ secrets.RELEASE_KEY }}
